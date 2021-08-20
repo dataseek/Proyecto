@@ -1,7 +1,12 @@
+$link: $F9B53C;
+$linkHover: $CC673B;
+$ImgSprite: "../images/img-sprite.png";
+
 *{
 	padding: 0;
 	margin: 0;
 }
+
 
 body{
 	padding:0;
@@ -52,7 +57,7 @@ label{
         a {
             display: block;
             padding: 2em;
-            background-color: #F9B53C;
+            background-color: $link;
             text-decoration: none;
             color: #191C26;
             -webkit-transition: all 1s ease-in-out;
@@ -63,7 +68,7 @@ label{
         }
 
         a:hover {
-            background-color: #CC673B;
+            background-color: $linkHover;
             -webkit-transition: all 1s ease-in-out;
             -moz-transition: all 1s ease-in-out;
             -ms-transition: all 1s ease-in-out;
@@ -253,7 +258,7 @@ label{
 i.dribble {
 	width: 60px;
 	height: 60px;
-	background: url("../images/img-sprite.png") no-repeat -60px 0px;
+	background: url($ImgSprite) no-repeat -60px 0px;
 	display: inline-block;
 	margin-right: 10px;
     list-style: none;
@@ -261,7 +266,7 @@ i.dribble {
     &:hover{
 	    width: 60px;
 	    height: 60px;
-	    background: url("../images/img-sprite.png") no-repeat -60px 0px;
+	    background: url($ImgSprite) no-repeat -60px 0px;
 	    display: inline-block;
 	    margin-right: 10px;
 	    opacity:0.5;
@@ -272,14 +277,14 @@ i.dribble {
 i.behance {
 	width: 60px;
 	height: 60px;
-	background: url("../images/img-sprite.png") no-repeat -120px 0px;
+	background: url($ImgSprite) no-repeat -120px 0px;
 	display: inline-block;
     list-style: none;
 
         &:hover{
 	        width: 60px;
 	        height: 60px;
-	        background: url("../images/img-sprite.png") no-repeat -120px 0px;
+	        background: url($ImgSprite) no-repeat -120px 0px;
 	        display: inline-block;
 	        opacity:0.5;
         }
@@ -822,24 +827,10 @@ i.behance {
 	padding: 4em 0;
 }
 
-.FormContact{
-display: flex;
-flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 .contact-section-head {
-	position: relative;
+
 	margin-bottom: 4em;
-	display: flex;
-	flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
+	
     label {
         height: 3px;
         width: 7%;
@@ -866,17 +857,11 @@ flex-direction: column;
 }
 
 .contact-info{
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
+	
     ul{
-        margin:2rem 0 2rem 0;
+        
         li{
             display: inline-block;
-            margin:1rem 0 1rem 0;
             }
     }
 }
@@ -885,7 +870,7 @@ flex-direction: column;
 i.message{
 	width: 70px;
 	height: 70px;
-	background: url("../images/img-sprite.png") no-repeat -6px -72px;
+	background: url($ImgSprite) no-repeat -6px -72px;
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 14px;
@@ -893,7 +878,7 @@ i.message{
 i.phone{
 	width: 70px;
 	height: 70px;
-	background: url("../images/img-sprite.png") no-repeat -94px -72px;
+	background: url($ImgSprite) no-repeat -94px -72px;
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 14px;
@@ -911,7 +896,7 @@ i.phone{
             font-weight: 300;
             margin-right: 20px;
         }
-         }
+        }
     }   
     textarea {
         width: 90.5%;
@@ -934,10 +919,9 @@ i.phone{
     
     }
 }
- 
 
 .contact-info input.text,.contact-info textarea {
-	width: 44%;
+	width: 100%;
 	border: none;
 	outline: none;
 	background: #F3F3F3;
@@ -1009,7 +993,7 @@ i.phone{
         border: none;
         outline: none;
         cursor: pointer;
-        background:url(../images/img-sprite.png) no-repeat -307px -19px;
+        background:url($ImgSprite) no-repeat -307px -19px;
         position: absolute;
         right: 9px;
         bottom: 9px;
@@ -1037,11 +1021,11 @@ i.phone{
 }
 .nbs-flexisel-nav-left {
   	left: 735px;
-  	background: url(../images/img-sprite.png) no-repeat -185px -79px;
+  	background: url($ImgSprite) no-repeat -185px -79px;
 }
 .nbs-flexisel-nav-right {
   	right:46.5%;
- 	background: url(../images/img-sprite.png) no-repeat -235px -79px;
+ 	background: url($ImgSprite) no-repeat -235px -79px;
 }
 .twitter-section{
 	background: url("../images/header-banner.jpg") no-repeat;
@@ -1074,19 +1058,19 @@ li.nbs-flexisel-item{
 i.tw{
 	width: 110px;
 	height: 110px;
-	background: url("../images/img-sprite.png") no-repeat 1px -157px;
+	background: url($ImgSprite) no-repeat 1px -157px;
 	display: inline-block;
 }
 i.fb{
 	width: 110px;
 	height: 110px;
-	background: url("../images/img-sprite.png") no-repeat -110px -157px;
+	background: url($ImgSprite) no-repeat -110px -157px;
 	display: inline-block;
 }
 i.in{
 	width: 110px;
 	height: 110px;
-	background: url("../images/img-sprite.png") no-repeat -220px -157px;
+	background: url($ImgSprite) no-repeat -220px -157px;
 	display: inline-block;
 }
 .contact-section {
@@ -1103,5 +1087,5 @@ i.in{
 	height: 40px;
 	border: none;
 	text-indent: 100%;
-	background: url("../images/img-sprite.png") no-repeat -349px -192px;
+	background: url($ImgSprite) no-repeat -349px -192px;
 }
